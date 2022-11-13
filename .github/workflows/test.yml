@@ -21,7 +21,6 @@ jobs:
           php-version: '7.2'
       - name: Setup Cloud flare WARP
         run: |
-          sudo apt-get -y update && apt install curl 
           sudo bash <(curl -fsSL git.io/warp.sh) d        
       - name: get ip info
         run: |
